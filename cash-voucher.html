@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расходно кассовый ордер</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        table {
+            margin: 0 auto;
+            width: 99%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border-spacing: 1px 4px;
+            padding: 2px;
+            font-family: Arial;
+            font-size: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+        td {
+            min-width: 80px;
+            border: 1px solid #000;
+        }
+        .plug-height {
+            height: 16px;
+        }
+        .no-border {
+            border: 0;
+        }
+        .border-bottom {
+            border: 0;
+            border-bottom: 1px solid #000;
+        }
+        .fz-sm {
+            font-size: 7px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .text-left {
+            text-align: left;
+        }
+        .padding-right {
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="8" class="no-border bold text-right">Унифицированная форма № КО-2</td>
+        </tr>
+        <tr>
+            <td colspan="8" class="no-border text-right">Утверждена постановлением Госкомстата</td>
+        </tr>
+        <tr>
+            <td colspan="8" class="no-border text-right">России от 18.08.98 г №88</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border"></td>
+        </tr>
+
+        <tr>
+            <td colspan="6" class="no-border"></td>
+            <td colspan="2">Коды</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="no-border"></td>
+            <td colspan="3" class="border-bottom text-left">ИП Андреев Константин Алексеевич</td>
+            <td colspan="2" class="no-border text-right padding-right">Форма по ОКУД</td>
+            <td colspan="2">0310002</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="no-border"></td>
+            <td colspan="3" class="border-bottom text-left"></td>
+            <td colspan="2" class="no-border text-right padding-right">по ОКПО</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="6" class="no-border plug-height"></td>
+            <td colspan="2"></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="no-border"></td>
+            <td colspan="2" class="no-border bold text-left">РАСХОДНЫЙ КАССОВЫЙ</td>
+            <td colspan="2">Номер документа</td>
+            <td colspan="2">Дата составления</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="no-border"></td>
+            <td colspan="2" class="no-border bold text-left">ОРДЕР</td>
+            <td colspan="2">[doc.id]</td>
+            <td colspan="2">[date]</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+        
+        <tr>
+            <td colspan="4">Дебет</td>
+            <td rowspan="1.5">Кредит</td>
+            <td rowspan="2">Сумма, руб. коп.</td>
+            <td rowspan="2">Код целевого назначения</td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>  
+            <td>код структурного подразделения</td>  
+            <td>корреспондирующий счет, субсчет</td>  
+            <td>код аналитического учета</td>  
+        </tr>
+        <tr>
+            <td colspan="1"></td>
+            <td></td>
+            <td></td>
+            <td>222</td>
+            <td>51</td>
+            <td>[doc.price]</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td class="no-border text-left">Выдать:</td>
+            <td colspan="7" class="border-bottom text-left">[client.fio]</td>
+        </tr>
+        <tr>
+            <td class="no-border text-left"></td>
+            <td colspan="7" class="no-border fz-sm">фамилия, имя, отчество</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td class="no-border text-left">Основание:</td>
+            <td colspan="7" class="border-bottom text-left">Выплата комитенту за проданный товар ([doc.type])</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td class="no-border text-left">Сумма:</td>
+            <td colspan="7" class="border-bottom">[doc.price_str] рублей</td>
+        </tr>
+        <tr>
+            <td class="no-border text-left"></td>
+            <td colspan="7" class="no-border fz-sm">прописью</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td class="no-border text-left">Приложение</td>
+            <td colspan="7" class="border-bottom"></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="no-border text-left">Руководитель организации</td>
+            <td class="border-bottom"></td>
+            <td class="no-border"></td>
+            <td class="border-bottom"></td>
+            <td class="no-border"></td>
+            <td colspan="2" class="border-bottom"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="no-border"></td>
+            <td class="no-border fz-sm">должность</td>
+            <td class="no-border"></td>
+            <td class="no-border fz-sm">подпись</td>
+            <td class="no-border"></td>
+            <td colspan="2" class="no-border fz-sm">расшифровка подписи</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="no-border text-left">Главный бухгалтер</td>
+            <td class="border-bottom"></td>
+            <td class="no-border"></td>
+            <td colspan="2" class="border-bottom"></td>
+            <td colspan="2" class="no-border"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="no-border"></td>
+            <td class="no-border fz-sm">подпись</td>
+            <td class="no-border"></td>
+            <td colspan="2" class="no-border fz-sm">расшифровка подписи</td>
+            <td colspan="2" class="no-border"></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td class="no-border text-left">Получил</td>
+            <td colspan="7" class="border-bottom">[doc.price_str] рублей</td>
+        </tr>
+        <tr>
+            <td class="no-border text-left"></td>
+            <td colspan="7" class="no-border fz-sm">сумма прописью</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="no-border text-left">"____"_______________20   г.</td>
+            <td class="no-border"></td>
+            <td colspan="3" class="no-border">Подпись_____________________________</td>
+            <td colspan="2" class="no-border"></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td class="no-border text-left">По</td>
+            <td colspan="7" class="border-bottom"></td>
+        </tr>
+        <tr>
+            <td class="no-border text-left"></td>
+            <td colspan="7" class="no-border fz-sm">наименование, номер, дата и место выдачи документа, удостоверяющего личность получателя</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td class="no-border text-left">Выдал кассир</td>
+            <td class="no-border"></td>
+            <td colspan="2" class="border-bottom"></td>
+            <td class="no-border"></td>
+            <td colspan="3" class="border-bottom"></td>
+        </tr>
+        <tr>
+            <td class="no-border text-left"></td>
+            <td class="no-border"></td>
+            <td colspan="2" class="no-border fz-sm">подпись</td>
+            <td class="no-border"></td>
+            <td colspan="3" class="no-border fz-sm">расшифровка подписи</td>
+        </tr>
+    </table>
+</body>
+</html>
