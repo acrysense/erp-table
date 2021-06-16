@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Договор комиссии</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        table {
+            margin: 0 auto;
+            width: 99%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border-spacing: 1px 4px;
+            padding: 2px;
+            font-family: Arial;
+            font-size: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+        td {
+            min-width: 50px;
+            border: 1px solid #000;
+        }
+        .plug-height {
+            height: 16px;
+        }
+        .no-border {
+            border: 0;
+        }
+        .border-bottom {
+            border: 0;
+            border-bottom: 1px solid #000;
+        }
+        .fz-sm {
+            font-size: 7px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .text-left {
+            text-align: left;
+        }
+        .padding-right {
+            padding-right: 10px;
+        }
+        .table-center {
+            vertical-align: middle;
+        }
+        .red {
+            color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="8" class="no-border bold">Договор cкупки № [contract.number] от [date]</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="4" class="no-border text-left">[date] г.</td>
+            <td colspan="4" class="no-border text-right">Санкт-Петербург</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border text-left">ИП Андреев Константин Алексеевич, в дальнейшем Покупатель, которого представляет брокер [buyer.fio], действующий(ая) на основании доверенности, и [client.fio], именуемый(ая) в дальнейшем Продавец, заключили договор о нижеследующем.</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border text-left bold">1. Предмет договора:</td>
+        </tr>
+        <tr>
+            <td colspan="8" class="no-border text-left">Продавец продает, а Покупатель приобретает товар по акту № [contract.number] на сумму [сумма договора] руб.</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border text-left bold">2. Обязанности сторон</td>
+        </tr>
+        <tr>
+            <td colspan="8" class="no-border text-left">
+                2.1 Продавец обязан
+                    - передать товар в соответствии с описанием п.1 до исполнения договора.
+                    - передать товар Покупателю свободным от любых прав третьих лиц
+                2.2 Покупатель обязан
+                    - принять и оплатить товар непосредственно после передачи ему товара Продавцом
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border text-left bold">3. Порядок расчетов:</td>
+        </tr>
+        <tr>
+            <td colspan="8" class="no-border text-left">Оплата стоимости товара производится производится по цене, указанной в п.1 за наличный расчет</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border text-left bold">4. Особые условия</td>
+        </tr>
+        <tr>
+            <td colspan="8" class="no-border text-left">После исполнения обязательств по договору, стороны отказываются от каких-либо претензий по предмету договора.</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border text-left bold">5. Реквизиты и подписи сторон</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr>
+            <td colspan="4" class="no-border text-left bold">Комиссионер:</td>
+            <td colspan="4" class="no-border text-left bold">Комитент:</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="no-border text-left bold">[shop.web]</td>
+            <td colspan="4" class="no-border text-left">[client.fio]</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="no-border text-left bold">[shop.email]</td>
+            <td colspan="4" class="no-border text-left red">Карта клиента: [номер карты]</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="no-border text-left"></td>
+            <td colspan="4" class="no-border text-left red">E-mail: [email адрес]</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="no-border text-left">[shop.name]</td>
+            <td colspan="4" class="no-border text-left">Дата рождения: [client.birthdate]</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="no-border text-left">[shop.inn]</td>
+            <td colspan="4" class="no-border text-left">Паспорт: [client.doc_series] [client.doc_number]</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="no-border text-left">[shop.address]</td>
+            <td colspan="4" class="no-border text-left">Выдан: [client.doc_issued]</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="no-border text-left">[shop.ogrn]</td>
+            <td colspan="4" class="no-border text-left red">Дата: [дата выдачи]</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="no-border text-left">[shop.rs]</td>
+            <td colspan="4" class="no-border text-left">Прописка: [client.city], [client.district], [client.street], [client.house], [client.block], [client.flat]</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="no-border"></td>
+            <td colspan="4" class="no-border text-left red">Телефон: [телефон]</td>
+        </tr>
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="no-border text-left">✔_________________/([buyer.fio])</td>
+            <td colspan="4" class="no-border text-left">✔_________________/([client.fio])</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" class="no-border plug-height"></td>
+        </tr>
+
+        <tr class="table-center">
+            <td width="30">№</td>
+            <td width="70">ID</td>
+            <td width="300" colspan="2">Наименование и описание товара</td>
+            <td>Кол-во</td>
+            <td>Сумма</td>
+            <td>Магазин</td>
+            <td>Пол</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>[#goodsTable]</td>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
